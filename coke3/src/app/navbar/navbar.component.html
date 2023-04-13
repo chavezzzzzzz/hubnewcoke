@@ -1,0 +1,42 @@
+<div id="div1">
+    <div class="container">
+        <img id="nav" (click)="toggleBgColor()" [style.background-color]="isGrey ? 'rgba(241, 238, 238, 1)' : ''" (click)="toggleListDisplay()" src="assets/nav.png">
+    </div>      
+    <img id="logo" height="50" width="50" src="assets/coke2.svg">
+    <ul id="lastul1">
+        <a id="products" href="">OUR PRODUCTS</a>
+        <ul id="lastul"> <a id="maindrop"></a>
+            <li class="lastli"><img class="lastimages" src="assets/maindrop1.png"></li>
+            <li class="lastli"><img class="lastimages" src="assets/maindrop2.png"></li>
+            <li class="lastli"><img class="lastimages" src="assets/maindrop3.png"></li>
+            <li class="lastli"><img class="lastimages" src="assets/maindrop4.png"></li>
+            <li class="lastli"><img class="lastimages" src="assets/maindrop5.png"></li>
+            <li class="lastli"><img class="lastimages" src="assets/maindrop6.png"></li>
+        </ul>
+        <a id="triangle"></a>
+        <a id="shop" style="text-decoration:none" href="">SHOP</a>
+        <a id="give" href="">GIVE</a>
+        <a id="rewards" href="">REWARDS</a>
+        <a id="where" href="">WHERE TO BUY</a>
+        <a id="studio" href="">COKE STUDIO</a>
+    </ul>
+</div>
+<ul id="listnew" [ngStyle]="{ 'display': isListVisible ? 'flex' : '', 'flex-direction': isListVisible ? 'column' : 'row' }">
+    <li id="list2products"><a class="list2" id="products2" href="">OUR PRODUCTS</a>
+                <ul id="list3">
+                    <li class="list3li" id="list3licoca"><a class="list3a" id="list3coca" href="">Coca-Cola</a></li>
+                    <li class="list3li" id="list3lizero"><a class="list3a" id="list3zero" href="">Coke Zero Sugar</a></li>
+                    <li class="list3li" id="list3liflavors"><a class="list3a" id="list3flavors" href="">Flavors</a></li>
+                    <li class="list3li" id="list3licreations"><a class="list3a" id="list3creations">Coca-Cola Creations</a></li>
+                    <li class="list3li" id="list3litastes"><a class="list3a" id="list3tastes" href="">Coca-Cola Local Tastes</a></li>
+                    <li class="list3li" id="list3liall"><a class="list3a" id="list3all" href="">All Products</a></li>
+                </ul></li>
+    <li id="list2shop"><a class="list2" id="shop2" href="">SHOP</a></li>
+    <li id="list2give"><a class="list2" id="give2" href="">GIVE</a></li>
+    <li id="list2rewards"><a class="list2" id="rewards2" href="">REWARDS</a></li>
+    <li id="list2where"><a class="list2" id="where2" href="">WHERE TO BUY</a></li>
+    <li id="coke2" ><a class="list2" id="studio2" href="">COKE STUDIO</a></li>
+</ul>
+<img [ngStyle]="{ 'display': isListVisible ? 'block' : '' }" id="triangle2" src="assets/triangle.png">
+<img id="rosalia2" src="assets/rosalia2.jpeg">
+<!-- <button (click)="toggleColor()" [style.color]="isRed ? 'red' : 'blue'">hi</button> -->
