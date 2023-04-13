@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-middle',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./middle.component.css']
 })
 export class MiddleComponent {
-
+  constructor () {
+  }
+  ngOnInit(): void {  
+  }
 }

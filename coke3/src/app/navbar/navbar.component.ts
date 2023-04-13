@@ -1,4 +1,4 @@
-import { Component, Renderer2, ElementRef, HostListener } from '@angular/core';
+import { Component, Renderer2, ElementRef, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +6,10 @@ import { Component, Renderer2, ElementRef, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor() {}
+  constructor () {
+  }
+  ngOnInit(): void {  
+  }
   isListVisible: boolean = false;
     toggleListDisplay() {
       this.isListVisible = !this.isListVisible;
