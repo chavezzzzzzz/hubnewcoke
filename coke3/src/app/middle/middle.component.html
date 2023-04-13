@@ -1,1 +1,12 @@
-<img id="rosalia2" src="assets/rosalia2.jpeg">
+<form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" placeholder="Your name.." name="firstname" ngModel>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" placeholder="Last name.." name="lastname" ngModel>
+    <label for="gender">Gender</label>
+    <input type="radio" id="gender" placeholder="Gender.." name="gender" ngModel>
+    <label for="hobbies">Hobies</label>
+    <input type="radio" id="hobbies" placeholder="Hobbies.." name="hobbies" ngModel>
+<input type="submit" value="Submit" id="btn">
+</form>
+<!-- <img id="rosalia2" src="assets/rosalia2.jpeg"> -->

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MiddleComponent } from './middle/middle.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { MiddleComponent } from './middle/middle.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
