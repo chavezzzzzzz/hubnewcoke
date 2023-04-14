@@ -14,7 +14,7 @@
             <li class="lastli"><img class="lastimages" src="assets/maindrop6.png"></li>
         </ul>
         <a id="triangle"></a>
-        <a id="shop" style="text-decoration:none" href="">SHOP</a>
+        <a id="shop" style="text-decoration:none" routerLink="Middle">SHOP</a>
         <a id="give" href="">GIVE</a>
         <a id="rewards" href="">REWARDS</a>
         <a id="where" href="">WHERE TO BUY</a>
@@ -38,4 +38,6 @@
     <li id="coke2" ><a class="list2" id="studio2" href="">COKE STUDIO</a></li>
 </ul>
 <img [ngStyle]="{ 'display': isListVisible ? 'block' : '' }" id="triangle2" src="assets/triangle.png">
+<router-outlet></router-outlet>
+<img id="rosalia2" src="assets/rosalia2.jpeg">
 <!-- <button (click)="toggleColor()" [style.color]="isRed ? 'red' : 'blue'">hi</button> -->
